@@ -8,8 +8,7 @@ const ingredients = [
 ];
 
 const list = document.querySelector("#ingredients");
-
-ingredients.forEach(function (ingredient) {
+ingredients.map((ingredient) => {
   const lastItem = document.createElement("li");
   lastItem.textContent = `${ingredient}`;
   list.append(lastItem);
